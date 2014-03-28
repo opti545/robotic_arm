@@ -1,0 +1,10 @@
+_OpenUSART: CODE, 414 0 106
+_ConfigureOscillator: CODE, 598 0 6
+_main: CODE, 584 0 14
+_high_isr: CODE, 8 0 406
+_InitApp: CODE, 604 0 2
+__initialization: CODE, 566 0 12
+_RX_Interrupt: CODE, 166 0 136
+_low_isr: CODE, 24 0 138
+_USART_Init: CODE, 520 0 46
+Total: 866
