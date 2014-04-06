@@ -6,6 +6,7 @@
 
 package module.zigbee;
 import javax.comm.*;
+import arm.robot.gui.*;
 
 import java.io.*;
 import java.util.logging.Level;
@@ -108,7 +109,7 @@ public class ZigBeeModule {
             
             
         }
-        public void sendPacket(){
+        public void sendPacket(RobotArmGUI localgui){
             try {         
                 outputStream.write(packet);
                    

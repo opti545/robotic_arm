@@ -7,6 +7,7 @@
 package roboticarm471;
 import java.io.IOException;
 import module.leap.*;
+import arm.robot.gui.*;
 /**
  *
  * @author root
@@ -18,9 +19,11 @@ public class RoboticArm471 {
      */
     public static void main(String[] args) {
         System.out.println("Initializing Robotic Arm Interface");
+              
+                RobotArmGUI gui=new RobotArmGUI();
                 
-                
-		LeapModule leapmodule = new LeapModule();
+		LeapModule leapmodule = new LeapModule(gui);
+                gui.setVisible(true);
                 //start acquiring the gestures
 		leapmodule.controller.addListener(leapmodule);
                 
